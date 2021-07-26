@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="foo.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="red">
+        <h1><%= dayis %></h1>
+    
+        
+        <div class="pop ">
+
+        
+            <% for (var i=0 ;i<well.length;i++){ %>
+                <form action="/delete" method="POST">
+            
+            
+                    <div class="op">
+                        <input type="checkbox" id="raw" name="checkbox1"value ="<%= well[i]._id%>"onChange="this.form.submit()">
+                        <p><%=well[i].name%></p>
+                    </div>
+                    <input type="hidden"name="listName" value="<%= dayis %>"></input>
+                </form>
+                
+
+            <% } %>
+        </div>
+            <div class="rat">   
+                <form class="" action="/" method="post">
+        
+                    <input type="text" name="itemsq" autocomplete="off">
+
+                    <button type="submit" name="list"value="<%= dayis %>">+</button>
+                </form>
+            </div>
+    </div>
+</body>
+</html>
